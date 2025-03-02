@@ -1,0 +1,444 @@
+.linear-programming {
+  padding: 20px;
+}
+
+.theory-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2, h3, h4 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #34495e;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Subtopic Styles */
+.subtopics {
+  margin-top: 30px;
+}
+
+.subtopic {
+  margin-bottom: 30px;
+}
+
+.subtopic h3 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.subtopic ol {
+  margin-left: 20px;
+  color: #34495e;
+}
+
+.subtopic li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Form Styles */
+.form-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group h4 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+  font-size: 1.1em;
+}
+
+.objective-inputs,
+.constraint-inputs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.objective-inputs span,
+.constraint-inputs span {
+  color: #34495e;
+  font-weight: 500;
+}
+
+input[type="number"] {
+  width: 100px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  transition: border-color 0.3s;
+}
+
+select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: #95a5a6;
+  color: white;
+  margin-top: 10px;
+}
+
+.btn-secondary:hover {
+  background-color: #7f8c8d;
+  transform: translateY(-1px);
+}
+
+.solution-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+  height: 400px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .objective-inputs,
+  .constraint-inputs {
+    flex-wrap: wrap;
+  }
+
+  input[type="number"] {
+    width: 80px;
+  }
+
+  .chart-container {
+    height: 300px;
+  }
+}
+
+/* Tableau Styles */
+.tableau-container {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.tableau {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+.tableau td {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  text-align: right;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.tableau tr:last-child {
+  background-color: #e8f4f8;
+  font-weight: bold;
+}
+
+.tableau tr:last-child td {
+  border-top: 2px solid #3498db;
+}
+
+/* Transportation Problem Styles */
+.transport-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.transport-row input[type="text"] {
+  width: 150px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.transport-row input[type="text"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.cost-matrix {
+  overflow-x: auto;
+  margin: 15px 0;
+}
+
+.cost-matrix table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.cost-matrix th,
+.cost-matrix td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.cost-matrix th {
+  background-color: #f8f9fa;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.cost-matrix td:first-child {
+  background-color: #f8f9fa;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.cost-matrix input[type="number"] {
+  width: 80px;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  transition: border-color 0.3s;
+}
+
+.cost-matrix input[type="number"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .cost-matrix {
+    margin: 10px -15px;
+  }
+  
+  .cost-matrix table {
+    min-width: 500px;
+  }
+  
+  .transport-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .transport-row input[type="text"],
+  .transport-row input[type="number"] {
+    width: 100%;
+  }
+}
+
+/* Supply and Demand Styles */
+.supply-cell,
+.total-cell {
+  background-color: #f8f9fa;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.demand-row {
+  background-color: #f8f9fa;
+}
+
+.demand-row td {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.supply-demand-status {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.supply-demand-status p {
+  margin: 0;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.supply-demand-status .warning {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+.supply-demand-status .balanced {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+/* Adjust mobile styles */
+@media (max-width: 768px) {
+  .cost-matrix table {
+    min-width: 600px; /* Increased to accommodate supply column */
+  }
+  
+  .supply-demand-status {
+    margin: 15px -15px 0;
+    padding: 0 15px;
+  }
+}
+
+/* Transportation Solution Styles */
+.allocation-matrix {
+  margin: 20px 0;
+  overflow-x: auto;
+}
+
+.allocation-matrix h5 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.allocation-matrix table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.allocation-matrix th,
+.allocation-matrix td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.allocation-matrix th {
+  background-color: #f8f9fa;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.allocation-matrix td:first-child {
+  background-color: #f8f9fa;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.total-cost {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e8f4f8;
+  border-radius: 4px;
+  color: #2c3e50;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .allocation-matrix table {
+    min-width: 500px;
+  }
+}
+
+/* Transportation Method Solutions */
+.initial-solutions,
+.modi-solutions,
+.optimal-solution {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.method-solution {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.method-solution h6 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.optimal-solution {
+  background-color: #e8f6f3;
+  border: 1px solid #2ecc71;
+}
+
+.optimal-solution h5 {
+  color: #27ae60;
+  margin-bottom: 15px;
+}
+
+.optimal-solution .total-cost {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.method-solution p {
+  margin: 10px 0;
+  padding: 8px;
+  background-color: #f1f3f5;
+  border-radius: 4px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+  .method-solution {
+    padding: 10px;
+  }
+  
+  .initial-solutions,
+  .modi-solutions,
+  .optimal-solution {
+    padding: 10px;
+  }
+}
